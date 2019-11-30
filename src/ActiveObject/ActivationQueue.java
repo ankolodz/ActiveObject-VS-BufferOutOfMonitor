@@ -1,3 +1,5 @@
+package ActiveObject;
+
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class ActivationQueue {

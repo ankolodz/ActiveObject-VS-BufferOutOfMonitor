@@ -1,3 +1,5 @@
+package ActiveObject;
+
 public class Proxy {
     private ActivationQueue queue;
 

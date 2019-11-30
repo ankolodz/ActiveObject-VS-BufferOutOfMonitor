@@ -1,3 +1,7 @@
+package ActiveObject;
+
+import Time_and_Variables.GlobalsVariables;
+
 import java.util.LinkedList;
 import java.util.Queue;
 

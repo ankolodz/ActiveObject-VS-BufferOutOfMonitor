@@ -1,3 +1,5 @@
+package Time_and_Variables;
+
 public class GlobalsVariables {
     private  int Consumer = 10;
     private  int Producer = 10;

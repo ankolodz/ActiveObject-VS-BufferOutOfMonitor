@@ -24,10 +24,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bazy/lab3 hybernate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/BufferOutOfMonitor" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="ActiveObject" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -76,6 +82,8 @@
       <workItem from="1574948276898" duration="3804000" />
       <workItem from="1575020761376" duration="215000" />
       <workItem from="1575023848365" duration="2605000" />
+      <workItem from="1575122912744" duration="745000" />
+      <workItem from="1575123831465" duration="635000" />
     </task>
     <servers />
   </component>

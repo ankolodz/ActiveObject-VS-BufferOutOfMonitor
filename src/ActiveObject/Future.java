@@ -1,3 +1,5 @@
+package ActiveObject;
+
 public class Future {
     private boolean stateReady =false;
     private TypeWork typeWork;

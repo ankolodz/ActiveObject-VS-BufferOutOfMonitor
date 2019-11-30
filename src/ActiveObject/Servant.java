@@ -1,3 +1,5 @@
+package ActiveObject;
+
 public class Servant {
     private int bufferSize = 64;
     private int buffer = 0;

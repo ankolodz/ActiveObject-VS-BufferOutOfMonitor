@@ -1,7 +1,9 @@
-import java.util.LinkedList;
-import java.util.List;
+package ActiveObject;
+
 import java.util.Random;
-import java.util.concurrent.ThreadLocalRandom;
+
+import Time_and_Variables.GlobalsVariables;
+import Time_and_Variables.TimeManager;
 
 import static java.lang.Math.abs;
 
@@ -13,7 +15,7 @@ public class Consument extends Thread {
     private GlobalsVariables globalVariables;
     private int id;
 
-    public Consument(Proxy proxy, int maxPart,GlobalsVariables g,int id) {
+    public Consument(Proxy proxy, int maxPart, GlobalsVariables g, int id) {
         this.proxy = proxy;
         this.maxPart = maxPart;
         this.globalVariables = g;
