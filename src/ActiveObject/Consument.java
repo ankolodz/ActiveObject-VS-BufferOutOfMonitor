@@ -26,7 +26,7 @@ public class Consument extends Thread {
     public void run() {
         try {
             Random rand = new Random();
-            for (int i = 0; i < globalVariables.getLifeTime(); i++) {
+            while(true) {
                 TimeManager time = new TimeManager("C"+id);
                 futures = proxy.get(abs(rand.nextInt() % maxPart + 1));
                 boolean workReady=false;

@@ -22,7 +22,7 @@ public class Producer extends Thread {
     @Override
     public void run() {
         Random myRand =new Random(globalsVariables.getProducerSeek()+id);
-        for (int i=0;i<globalsVariables.getLifeTime();i++){
+        while(true){
             try {
                 TimeManager time = new TimeManager("P "+id);
 

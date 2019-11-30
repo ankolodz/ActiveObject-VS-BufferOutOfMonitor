@@ -23,7 +23,7 @@ public class Customer extends Thread {
     public void run() {
         Random myRand = new Random(globalsVariables.getCustomerSeek()+id);
 
-        for (int i=0;i<globalsVariables.getLifeTime();i++) {
+        while(true) {
             try {
                 TimeManager time = new TimeManager("C "+id);
                 buffer.consume(abs(myRand.nextInt()%32));
