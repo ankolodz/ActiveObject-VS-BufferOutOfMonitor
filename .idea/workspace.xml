@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bed92fc1-6618-405b-a56f-0d8e2cfd0800" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +20,11 @@
   </component>
   <component name="ProjectId" id="1TvcdTkTM36EmC7QGabH5K6GaK4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -42,20 +46,10 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="ActiveObject" />
       <method v="2">
@@ -67,6 +61,18 @@
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -88,6 +94,8 @@
       <workItem from="1575023848365" duration="2605000" />
       <workItem from="1575122912744" duration="745000" />
       <workItem from="1575123831465" duration="5596000" />
+      <workItem from="1575139180053" duration="2069000" />
+      <workItem from="1575141878374" duration="977000" />
     </task>
     <servers />
   </component>
@@ -106,5 +114,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575142080541">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="182" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142080541" />
+    <state x="811" y="416" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575139194924">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="811" y="416" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575139194924" />
+    <state x="740" y="268" key="FileChooserDialogImpl" timestamp="1575142077679">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="268" key="FileChooserDialogImpl/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142077679" />
+    <state width="1876" height="355" key="GridCell.Tab.0.bottom" timestamp="1575142885900">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="355" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142885900" />
+    <state width="1876" height="355" key="GridCell.Tab.0.center" timestamp="1575142885900">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="355" key="GridCell.Tab.0.center/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142885900" />
+    <state width="1876" height="355" key="GridCell.Tab.0.left" timestamp="1575142885900">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="355" key="GridCell.Tab.0.left/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142885900" />
+    <state width="1876" height="355" key="GridCell.Tab.0.right" timestamp="1575142885900">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="355" key="GridCell.Tab.0.right/0.0.1920.1050/1920.0.1680.1050@0.0.1920.1050" timestamp="1575142885900" />
   </component>
 </project>

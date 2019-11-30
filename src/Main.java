@@ -10,15 +10,17 @@ public class Main {
         for (int threadTask = 5;threadTask<=25;threadTask+=5)
             for (int c=1;c<1025;c*=2){
                 for (int p=1;p<1025;p*=2){
-                    System.out.format("***ActiveObject bT %d tT %d C %d P %d%n",bufforTask,threadTask,c,p);
+                    for (int i=0;i<10;i++) {
+                        System.out.format("***ActiveObject bT %d tT %d C %d P %d%n", bufforTask, threadTask, c, p);
 
-                    globalsVariables.setVariables(c,p,bufforTask,threadTask,100);
-                    ActiveObject activeObject = new ActiveObject(globalsVariables);
-                    activeObject.start();
+                        globalsVariables.setVariables(c, p, bufforTask, threadTask, 100);
+                        ActiveObject activeObject = new ActiveObject(globalsVariables);
+                        activeObject.start();
 
-                    System.out.format("***BufferOutOfMonitor bT %d tT %d C %d P %d%n",bufforTask,threadTask,c,p);
-                    BufferOutOfMonitor bufferOutOfMonitor = new BufferOutOfMonitor(globalsVariables);
-                    bufferOutOfMonitor.start();
+                        System.out.format("***BufferOutOfMonitor bT %d tT %d C %d P %d%n", bufforTask, threadTask, c, p);
+                        BufferOutOfMonitor bufferOutOfMonitor = new BufferOutOfMonitor(globalsVariables);
+                        bufferOutOfMonitor.start();
+                    }
                 }
             }
 

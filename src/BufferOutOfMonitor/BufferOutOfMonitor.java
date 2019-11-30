@@ -24,12 +24,11 @@ public class BufferOutOfMonitor {
             producerThreads[i] = new Producer(buffer,globalsVariables,i);
             producerThreads[i].start();
         }
-        Thread.sleep(1000*1);
+        Thread.sleep(1000*30);
         for (int i = 0; i < globalsVariables.getConsumer(); i++)
-            customerThreads[i].stop();
+            customerThreads[i].join(1);
         for (int i = 0; i < globalsVariables.getProducer(); i++)
-            producerThreads[i].stop();
-        System.out.println("Threads died");
+            producerThreads[i].join(1);
 
     }
 }

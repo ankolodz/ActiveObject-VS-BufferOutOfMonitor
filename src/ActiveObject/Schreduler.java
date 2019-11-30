@@ -37,7 +37,7 @@ public class Schreduler extends Thread {
             }
                 try {
                     task = queue.get();
-                    if(flag != TypeWork.NONE) {
+                    if(flag.equals(task.getTypeWork()) ) {
                         isWait.add(task);
                         continue;
                     }

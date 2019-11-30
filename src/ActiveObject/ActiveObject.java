@@ -29,14 +29,15 @@ public class ActiveObject {
             producerThreads[i] = new Producer(proxy, maxPart, globalsVariables, i);
             producerThreads[i].start();
         }
-        Thread.sleep(1000*1);
+        Thread.sleep(1000*30);
+        schreduler.join(1);
         for (int i = 0; i < globalsVariables.getConsumer(); i++)
-            customerThreads[i].stop();
+            customerThreads[i].join(1);
         for (int i = 0; i < globalsVariables.getProducer(); i++)
-            producerThreads[i].stop();
-        System.out.println("Threads died");
-        schreduler.stop();
-        System.out.println("Schreduler died");
+            producerThreads[i].join(1);
+       // System.out.println("Threads died");
+
+       // System.out.println("Schreduler died");
 
     }
 }
