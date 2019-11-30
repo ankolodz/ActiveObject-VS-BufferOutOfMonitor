@@ -21,8 +21,10 @@ public class Schreduler extends Thread {
         while (true){
             //System.out.println("schreduler try get mainQueueu: "+isWait.size());
             Future task;
+            TypeWork flag = TypeWork.NONE;
             if (isWait.size()!=0){
                 task= isWait.peek();
+                flag = task.getTypeWork();
                 try {
                     if (sendToServant(task)) {
                         isWait.remove();
@@ -35,6 +37,10 @@ public class Schreduler extends Thread {
             }
                 try {
                     task = queue.get();
+                    if(flag != TypeWork.NONE) {
+                        isWait.add(task);
+                        continue;
+                    }
                     if (!sendToServant(task)) isWait.add(task);
                     else task.setReady();
                 }

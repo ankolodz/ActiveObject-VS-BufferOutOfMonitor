@@ -1,5 +1,5 @@
 package ActiveObject;
 
 public enum TypeWork {
-    PRODUCER, CONSUMENT
+    PRODUCER, CONSUMENT,NONE
 }
