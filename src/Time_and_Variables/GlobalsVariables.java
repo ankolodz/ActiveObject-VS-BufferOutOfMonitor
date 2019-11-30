@@ -7,6 +7,7 @@ public class GlobalsVariables {
     private  int extraWork = 2000;
     private int lifeTime = 10;
     private  int quark = 2;
+    private int seek = 100;
 //    private  int
 
     public  int getConsumer() {
@@ -37,5 +38,7 @@ public class GlobalsVariables {
         extraWork = E;
         lifeTime = L;
     }
+    public int getCustomerSeek (){return  seek;}
+    public int getProducerSeek (){return  seek+10;}
 
 }

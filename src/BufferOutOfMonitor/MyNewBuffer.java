@@ -1,5 +1,7 @@
 package BufferOutOfMonitor;
 
+import Time_and_Variables.GlobalsVariables;
+
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -7,6 +9,7 @@ import java.util.concurrent.locks.ReentrantLock;
 public class MyNewBuffer {
     int buffer =0;
     int limit;
+    GlobalsVariables globalsVariables;
     Lock addLock = new ReentrantLock();
     Lock consumeLock = new ReentrantLock();
     Lock usingLock = new ReentrantLock();
@@ -16,7 +19,11 @@ public class MyNewBuffer {
 
 
     public void setNewLimit (int size){limit=size;}
-    public MyNewBuffer (int limit){this.limit=limit;}
+    public MyNewBuffer (int limit, GlobalsVariables globalsVariables){
+        this.limit=limit;
+        this.globalsVariables = globalsVariables;
+    }
+
 
     public void produce (int part) throws InterruptedException {
         addLock.lock();
@@ -26,8 +33,9 @@ public class MyNewBuffer {
             usingLockCondition.await();
         }
         buffer += part;
+        Thread.sleep(globalsVariables.getTaskBuforTime());
 
-        System.out.println("Add + "+buffer);
+        //System.out.println("Add + "+buffer);
         usingLockCondition.signal();
         usingLock.unlock();
         addLock.unlock();
@@ -42,8 +50,9 @@ public class MyNewBuffer {
             usingLockCondition.await();
         }
         buffer -= part;
+        Thread.sleep(globalsVariables.getTaskBuforTime());
 
-        System.out.println("Produce "+buffer);
+        //System.out.println("Produce "+buffer);
         usingLockCondition.signal();
         usingLock.unlock();
         consumeLock.unlock();
