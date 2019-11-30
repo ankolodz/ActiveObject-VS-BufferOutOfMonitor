@@ -27,7 +27,7 @@ public class BufferOutOfMonitor {
         for (int i=0;i<globalsVariables.getConsumer();i++)
             customerThreads[i].join();
         for (int i=0;i<globalsVariables.getConsumer();i++)
-            customerThreads[i].join();
+            producerThreads[i].join();
 
     }
 }
